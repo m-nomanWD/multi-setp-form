@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Multi-step form | Muhammad Nauman FEMC</title>
+
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- Sidebar start -->
+      <div class="img-container">
+        <div class="step">
+          <div class="number active-number">1</div>
+          <div class="text">
+            <div>Step 1</div>
+            <div class="info">Your info</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="number">2</div>
+          <div class="text">
+            <div>Step 2</div>
+            <div class="info">Select plan</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="number">3</div>
+          <div class="text">
+            <div>Step 3</div>
+            <div class="info">Add-ons</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="number">4</div>
+          <div class="text">
+            <div>Step 4</div>
+            <div class="info">Summary</div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+      <div class="form">
+        <!-- Step 1 end -->
+
+        <!-- form setps container -->
+        <article class="form-step">
+          <!-- header part of the form -->
+          <div class="form-header">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+          </div>
+          <!-- form-step1 start -->
+          <div class="center show" data-id="1">
+            <div class="controls-container">
+              <div class="input-container">
+                <label for="name"> Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="e.g. Muhammad Nauman"
+                />
+                <span class="name-span error"></span>
+              </div>
+              <div class="input-container">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="e.g.  myemail@lorem.com"
+                />
+                <span class="email-span error"></span>
+              </div>
+              <div class="input-container">
+                <label for="number"> Phone Number</label>
+                <input
+                  type="text"
+                  id="number"
+                  placeholder="e.g. +92 300 000 000 "
+                  maxlength="12"
+                />
+                <span class="number-span error"></span>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="step-next form1-btn">Next Step</button>
+            </div>
+          </div>
+          <!-- form step2 start -->
+          <div class="center" data-id="2">
+            <div data-id="2" class="plan-boxs">
+              <div class="plan-box plan-box-select">
+                <img src="./assets/images/icon-arcade.svg" alt="" />
+                <div>
+                  <h5>Arcade</h5>
+                  <p>
+                    $<span class="price"> 9</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </p>
+                  <h6>2 months free</h6>
+                </div>
+              </div>
+
+              <div class="plan-box">
+                <img src="./assets/images/icon-advanced.svg" alt="" />
+                <div>
+                  <h5>Advanced</h5>
+                  <p>
+                    $<span class="price"> 12</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </p>
+                  <h6>2 months free</h6>
+                </div>
+              </div>
+              <div class="plan-box">
+                <img src="./assets/images/icon-pro.svg" alt="" />
+                <div>
+                  <h5>Pro</h5>
+                  <p>
+                    $<span class="price"> 15</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </p>
+                  <h6>2 months free</h6>
+                </div>
+              </div>
+            </div>
+            <div class="price-toggle">
+              <span class="monthly active">Monthly</span>
+              <div class="toggle-btn-container">
+                <div class="toggle-btn"></div>
+              </div>
+              <span class="yearly">Yearly</span>
+            </div>
+            <div class="btn-container">
+              <button class="step-next form2-btn">Next Step</button>
+            </div>
+          </div>
+          <!-- form step3 start -->
+
+          <div class="center" data-id="3">
+            <div class="strips-container">
+              <div class="strip">
+                <div class="strip-text">
+                  <div class="check-markimg">
+                    <img src="./assets/images/icon-checkmark.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>Online service</h5>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                </div>
+                <div class="add-ons-price">
+                  <h6>
+                    +$<span class="price">1</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="strip">
+                <div class="strip-text">
+                  <div class="check-markimg">
+                    <img src="./assets/images/icon-checkmark.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>Larger storage</h5>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                </div>
+                <div class="add-ons-price">
+                  <h6>
+                    +$<span class="price">2</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="strip">
+                <div class="strip-text">
+                  <div class="check-markimg">
+                    <img src="./assets/images/icon-checkmark.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>Customizable Profile</h5>
+                    <p>Custom theme on your profile</p>
+                  </div>
+                </div>
+                <div class="add-ons-price">
+                  <h6>
+                    +$<span class="price">2</span>/<span class="dauration"
+                      >mo</span
+                    >
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="step-next form3-btn">Next Step</button>
+            </div>
+          </div>
+          <!-- form step4 start -->
+
+          <div class="center" data-id="4">
+            <div class="bill-head">
+              <div class="offer-subsucrped">
+                <div>
+                  <span class="offer-name">Arcade</span>
+                  <span class="validity">(Monthly)</span>
+                </div>
+                <p class="change">Change</p>
+              </div>
+              <h5>
+                $<span class="price">2</span>/<span class="dauration">mo</span>
+              </h5>
+            </div>
+            <div class="extra-offers"></div>
+            <div class="total-bill">
+              <div>
+                <p>Total <span class="time-duration">(Per Month)</span></p>
+              </div>
+              <div class="bill-amount">
+                <h5>
+                  $<span class="total-price">0</span>/<span class="dauration"
+                    >mo</span
+                  >
+                </h5>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="finish-btn">confirm</button>
+            </div>
+          </div>
+        </article>
+        <!--form is end here -->
+        <!-- finish part of the form -->
+        <div class="finish">
+          <img src="./assets/images/icon-thank-you.svg" alt="" />
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+        <!-- go back button -->
+        <button class="go-back">go back</button>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="muhammad-noman.netlify.app">Your Name Here</a>.
+    </div>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
